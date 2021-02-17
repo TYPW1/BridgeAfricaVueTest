@@ -45,7 +45,7 @@
 </template>
 
 <script>
-import {UserList} from "@/data/users";
+
 import Swal from 'sweetalert2'
 import sleep from "@/utils/sleep";
 export default {
@@ -71,11 +71,12 @@ name: "LoginPage",
     if (!this.validate()) return
     console.log('Login')
     Swal.fire({
+      titleText: "Please wait",
       allowOutsideClick: false
     }).then()
     Swal.showLoading()
     await sleep(1000)
-    const user = UserList.find(x => x.email === this.email && x.password === this.password)
+    const user = this.$store.state.users.find(x => x.email === this.email && x.password === this.password)
 
     if (!user) {
       await Swal.update({

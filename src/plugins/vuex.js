@@ -1,12 +1,13 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import Products from "@/data/products";
+import {UserList} from "@/data/users";
 
 Vue.use(Vuex)
 
 const store = new Vuex.Store({
     state: {
-
+        users: UserList,
         isLoggedIn: false,
         user: null,
         products: Products
@@ -18,11 +19,25 @@ const store = new Vuex.Store({
             localStorage.setItem("user", JSON.stringify(user))
         },
 
+        createUser(state, user) {
+            state.isLoggedIn = true
+            user.id = UserList[UserList.length-1].id +1
+            state.users = [...state.users, user]
+            state.user = user
+            localStorage.setItem("user", JSON.stringify(user))
+            localStorage.setItem("users", JSON.stringify(state.users))
+        },
+
         loadUser(state){
             const user = localStorage.getItem("user")
+            const users = localStorage.getItem("users")
             if (user){
                 state.user = JSON.parse(user)
                 state.isLoggedIn = true
+            }
+
+            if (users){
+                state.users = JSON.parse(users)
             }
         },
 
