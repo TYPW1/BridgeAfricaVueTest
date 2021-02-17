@@ -20,7 +20,7 @@ The bridge product is a simple Vue App with the following features
 
 ## Project setup
 ### Online test
-You can test the application online following this [Online Link](https://bridge-product.netlify.com/bridge-products). 
+You can test the application online following this [Online Link](https://bridge-product.netlify.app/). 
 
 ### Manual build
 In order to try the app, you must type the following command
