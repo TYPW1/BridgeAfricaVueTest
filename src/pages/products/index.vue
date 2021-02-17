@@ -8,7 +8,7 @@
 
     <div class="mt-4">
       <v-row align="start" align-content="start">
-        <v-col cols="3" class="">
+        <v-col lg="3" class="hidden-md-and-down">
 
             <v-card
                 tile flat
@@ -37,7 +37,7 @@
         <v-col class="px-0">
 
             <v-row >
-              <v-col v-for="product in pageProduct" cols="4" :key="product.id">
+              <v-col v-for="product in pageProduct" cols="12" md="4" :key="product.id">
                 <v-card
 
                     class="mx-auto"
