@@ -45,11 +45,14 @@ const store = new Vuex.Store({
             localStorage.setItem("product", JSON.stringify(state.products))
         },
 
-        deleteProduct(state, index){
+        deleteProduct(state, id){
             const product = [...state.products]
-            product.splice(index, 1)
-            state.products = product
-            localStorage.setItem("product", JSON.stringify(state.products))
+            const index = state.products.findIndex(x => x.id === id)
+            if (index>-1) {
+                product.splice(index, 1)
+                state.products = product
+                localStorage.setItem("product", JSON.stringify(state.products))
+            }
         },
 
         updateProduct(state, product){

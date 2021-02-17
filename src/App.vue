@@ -7,7 +7,7 @@
 
     >
       <v-container class="d-flex">
-      <div class="d-flex align-center">
+      <router-link to="/" class="d-flex white--text text-decoration-none align-center">
         <v-img
             alt="Vuetify Logo"
             class="shrink mr-2"
@@ -20,7 +20,7 @@
         <h2 class="shrink mt-1 hidden-sm-and-down">
           Bridge Africa
         </h2>
-      </div>
+      </router-link>
 
       <v-spacer></v-spacer>
 

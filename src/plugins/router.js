@@ -21,7 +21,7 @@ const router = new VueRouter({
         { path: '/login', component: LoginPage},
         { path: '/register', component: RegisterPage},
         { path: '/products', component: ProductPage},
-        { path: '/products:[id]', component: ProductDetailPage},
+        { path: '/products/:id', component: ProductDetailPage},
         { path: '/products/add', component: ProductNewPage},
     ]
 })

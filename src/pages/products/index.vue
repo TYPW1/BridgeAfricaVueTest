@@ -56,7 +56,7 @@
                       :src="`https://business.bridgeafrica.info/assets/img/team/${(product.id % 4) +1}.png`"
                   ></v-img>
 
-                  <v-card-title class="one-line">{{product.name}}</v-card-title>
+                  <v-card-title class="one-line"><router-link :to="`/products/${product.id}`" class="text-decoration-none">{{product.name}}</router-link> </v-card-title>
 
                   <v-card-text>
 
@@ -122,8 +122,9 @@ name: "index",
 <input type="text" id="type" class="swal2-input" placeholder="Type">
  <textarea type="text" id="description" class="swal2-textarea" placeholder="Description">
 `,
-      confirmButtonText: 'Sign in',
+      confirmButtonText: 'Create',
       cancelButtonText: 'Cancel',
+      showCancelButton: true,
       focusConfirm: false,
       preConfirm: () => {
         const name = Swal.getPopup().querySelector('#name').value
@@ -152,8 +153,8 @@ name: "index",
                 titleText: "Article added",
                 text: undefined,
                 cancelButtonText: "Okay",
-                showCancelButton: true,
-                confirmButtonText: "Open",
+                //showCancelButton: true,
+                confirmButtonText: "Okay",
               }
           )
           Swal.hideLoading()
