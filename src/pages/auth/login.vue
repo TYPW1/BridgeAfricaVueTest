@@ -89,15 +89,16 @@ name: "LoginPage",
       this.$store.commit('setUser', user)
       localStorage.setItem("user", JSON.stringify(user))
       await this.$router.replace("/")
+      Swal.update({
+        title: 'Bridge Africa',
+        text: 'Welcome, our site uses local storage to store local information on your browser',
+        icon: 'info',
+        confirmButtonText: 'Okay'
+      })
     }
 
     Swal.hideLoading()
-    Swal.update({
-      title: 'Bridge Africa',
-      text: 'Welcome, our site uses local storage to store local information on your browser',
-      icon: 'info',
-      confirmButtonText: 'Okay'
-    })
+  
   },
     validate () {
       return this.$refs.form.validate()
