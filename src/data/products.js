@@ -117,27 +117,6 @@ const Products = [ {
     "location": "Roudnice nad Labem",
     "type": "Support",
     "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem."
-},{
-    "user_id":2,
-    "id": 1,
-    "name": "Product 1",
-    "location": "Location 1",
-    "type": "Engineering",
-    "description": "Product 1 description"
-}, {
-    "user_id":2,
-    "id": 2,
-    "name": "Product 2",
-    "location": "Location 2",
-    "type": "Marketing",
-    "description": "Product 2 description"
-}, {
-    "user_id":2,
-    "id": 3,
-    "name": "Product 3",
-    "location": "Location 3",
-    "type": "Product Management",
-    "description": "Product 3 description"
 }, {
     "user_id":2,
     "id": 4,
@@ -173,13 +152,34 @@ const Products = [ {
     "location": "Nogueira do Cravo",
     "type": "Services",
     "description": "Product 8 description"
-}, {
+},{
+        "user_id":2,
+        "id": 3,
+        "name": "Product 3",
+        "location": "Location 3",
+        "type": "Product Management",
+        "description": "Product 3 description"
+},{
     "user_id":2,
     "id": 9,
     "name": "SJ Creations, Inc.",
     "location": "Huaiya",
     "type": "Training",
     "description": "Product 9 description"
+}, {
+    "user_id":2,
+    "id": 2,
+    "name": "Product 2",
+    "location": "Location 2",
+    "type": "Marketing",
+    "description": "Product 2 description"
+},{
+    "user_id":2,
+    "id": 1,
+    "name": "Product 1",
+    "location": "Location 1",
+    "type": "Engineering",
+    "description": "Product 1 description"
 }]
 
 export default Products
