@@ -1,67 +1,4 @@
-const Products = [{
-    "user_id":2,
-    "id": 1,
-    "name": "Product 1",
-    "location": "Location 1",
-    "type": "Engineering",
-    "description": "Product 1 description"
-}, {
-    "user_id":2,
-    "id": 2,
-    "name": "Product 2",
-    "location": "Location 2",
-    "type": "Marketing",
-    "description": "Product 2 description"
-}, {
-    "user_id":2,
-    "id": 3,
-    "name": "Product 3",
-    "location": "Location 3",
-    "type": "Product Management",
-    "description": "Product 3 description"
-}, {
-    "user_id":2,
-    "id": 4,
-    "name": "Product 4",
-    "location": "Location 4",
-    "type": "Legal",
-    "description": "Product 4 description"
-}, {
-    "user_id":2,
-    "id": 5,
-    "name": "Product 5",
-    "location": "Location 5",
-    "type": "Marketing",
-    "description": "Product 5 description"
-}, {
-    "user_id":2,
-    "id": 6,
-    "name": "Product 6",
-    "location": "Location 6",
-    "type": "Human Resources",
-    "description": "Product 6 description"
-}, {
-    "user_id":2,
-    "id": 7,
-    "name": "Product 7",
-    "location": "Location 7",
-    "type": "Training",
-    "description": "Product 7 description"
-}, {
-    "user_id":2,
-    "id": 8,
-    "name": "Topical Pharmaceuticals Inc.",
-    "location": "Nogueira do Cravo",
-    "type": "Services",
-    "description": "Product 8 description"
-}, {
-    "user_id":2,
-    "id": 9,
-    "name": "SJ Creations, Inc.",
-    "location": "Huaiya",
-    "type": "Training",
-    "description": "Product 9 description"
-}, {
+const Products = [ {
     "user_id":2,
     "id": 10,
     "name": "REMEDYREPACK INC.",
@@ -180,6 +117,69 @@ const Products = [{
     "location": "Roudnice nad Labem",
     "type": "Support",
     "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem."
+},{
+    "user_id":2,
+    "id": 1,
+    "name": "Product 1",
+    "location": "Location 1",
+    "type": "Engineering",
+    "description": "Product 1 description"
+}, {
+    "user_id":2,
+    "id": 2,
+    "name": "Product 2",
+    "location": "Location 2",
+    "type": "Marketing",
+    "description": "Product 2 description"
+}, {
+    "user_id":2,
+    "id": 3,
+    "name": "Product 3",
+    "location": "Location 3",
+    "type": "Product Management",
+    "description": "Product 3 description"
+}, {
+    "user_id":2,
+    "id": 4,
+    "name": "Product 4",
+    "location": "Location 4",
+    "type": "Legal",
+    "description": "Product 4 description"
+}, {
+    "user_id":2,
+    "id": 5,
+    "name": "Product 5",
+    "location": "Location 5",
+    "type": "Marketing",
+    "description": "Product 5 description"
+}, {
+    "user_id":2,
+    "id": 6,
+    "name": "Product 6",
+    "location": "Location 6",
+    "type": "Human Resources",
+    "description": "Product 6 description"
+}, {
+    "user_id":2,
+    "id": 7,
+    "name": "Product 7",
+    "location": "Location 7",
+    "type": "Training",
+    "description": "Product 7 description"
+}, {
+    "user_id":2,
+    "id": 8,
+    "name": "Topical Pharmaceuticals Inc.",
+    "location": "Nogueira do Cravo",
+    "type": "Services",
+    "description": "Product 8 description"
+}, {
+    "user_id":2,
+    "id": 9,
+    "name": "SJ Creations, Inc.",
+    "location": "Huaiya",
+    "type": "Training",
+    "description": "Product 9 description"
 }]
 
 export default Products

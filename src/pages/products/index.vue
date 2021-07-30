@@ -31,7 +31,7 @@
 
                   <v-img
                       height="250"
-                        :src="`https://business.bridgeafrica.info/assets/img/team/${(product.id % 4) +1}.png`"
+                        :src="`src/assets/bridge-logo.png`"
                   ></v-img>
 
                   <v-card-title class="one-line"><router-link :to="`/products/${product.id}`" class="text-decoration-none">{{product.name}}</router-link> </v-card-title>
