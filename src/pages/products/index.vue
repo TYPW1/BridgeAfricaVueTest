@@ -1,36 +1,14 @@
 <template>
   <div>
-    <h1>Bridge Product Catalog</h1>
-    <p class="text-body-2 blue-grey--text text--darken-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid architecto debitis distinctio dolorum eligendi esse ipsum, magnam magni, maiores minus praesentium quae quaerat quasi quia quisquam quos recusandae veniam. Fugit!</p>
+    <h1>Products</h1>
+    <p class="text-body-2 blue-grey--text text--darken-1">These are the products</p>
     <v-row justify="end">
-      <v-btn color="primary" @click="addNew" v-if="$store.state.isLoggedIn">New Product</v-btn>
+      <v-btn color="white" class="black--text" @click="addNew" v-if="$store.state.isLoggedIn">New Product</v-btn>
     </v-row>
 
     <div class="mt-4">
       <v-row align="start" align-content="start">
         <v-col lg="3" class="hidden-md-and-down">
-
-            <v-card
-                tile flat
-            >
-              <v-list  flat>
-                <v-subheader>Categories</v-subheader>
-                <v-list-item-group
-                    v-model="selectedItem"
-                    color="primary"
-                >
-                  <v-list-item
-                      v-for="(item, i) in items"
-                      :key="i"
-                  >
-
-                    <v-list-item-content>
-                      <v-list-item-title v-text="item.text"></v-list-item-title>
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-list-item-group>
-              </v-list>
-            </v-card>
 
 
         </v-col>
@@ -53,7 +31,7 @@
 
                   <v-img
                       height="250"
-                      :src="`https://business.bridgeafrica.info/assets/img/team/${(product.id % 4) +1}.png`"
+                        :src="`https://business.bridgeafrica.info/assets/img/team/${(product.id % 4) +1}.png`"
                   ></v-img>
 
                   <v-card-title class="one-line"><router-link :to="`/products/${product.id}`" class="text-decoration-none">{{product.name}}</router-link> </v-card-title>
@@ -102,12 +80,7 @@ name: "index",
     selectedItem: 1,
     items: [
       { text: 'Agriculture', icon: 'mdi-clock' },
-      { text: 'Arts and Culture', icon: 'mdi-account' },
-      { text: 'Computer sciences', icon: 'mdi-flag' },
-      { text: 'Marketing', icon: 'mdi-flag' },
-      { text: 'Sales and Commerce', icon: 'mdi-flag' },
-      { text: 'Business Analytics', icon: 'mdi-flag' },
-      { text: 'Economics', icon: 'mdi-flag' },
+
     ],
   }),
 
@@ -125,7 +98,7 @@ name: "index",
       confirmButtonText: 'Create',
       cancelButtonText: 'Cancel',
       showCancelButton: true,
-      focusConfirm: false,
+      focusCancel: true,
       preConfirm: () => {
         const name = Swal.getPopup().querySelector('#name').value
         const location = Swal.getPopup().querySelector('#location').value
@@ -172,10 +145,10 @@ name: "index",
       return p.reverse()
     },
     pageProduct(){
-      return this.products.slice((this.page-1)*9, this.page*9)
+      return this.products.slice((this.page-1)*6, this.page*6)
     },
     pages(){
-      return Math.ceil(this.products.length / 9)
+      return Math.ceil(this.products.length / 6)
     }
   }
 }

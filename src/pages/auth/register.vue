@@ -1,6 +1,6 @@
 <template>
   <v-layout align-center  column>
-    <h2 class="mb-8">Welcome to Bridge Africa</h2>
+    <h2 class="mb-8">Welcome</h2>
 
     <v-card min-width="400" >
       <v-container>
@@ -40,7 +40,7 @@
             ></v-text-field>
 
             <v-checkbox label="I accept Bridge Africa terms" :rules="termRules" v-model="term"></v-checkbox>
-            <v-btn color="primary" class="my-4" type="submit">Register</v-btn>
+            <v-btn color="dark" class="white" type="submit">Register</v-btn>
 
             <v-layout justify-end class="mt-4">
               <v-btn text class="grey--text text--darken-1" link to="/login">Login instead</v-btn>
@@ -78,7 +78,7 @@ export default {
     ],
 
     termRules: [
-      v => !!v || 'Term must be accepted',
+      v => !!v || 'Accept terms of use',
     ],
 
     email: '',
@@ -105,7 +105,7 @@ export default {
       Swal.hideLoading()
       Swal.update({
         title: 'Bridge Africa',
-        text: 'Welcome, our site uses local storage to store local information on your browser',
+        titleText: 'Welcome',
         icon: 'info',
         confirmButtonText: 'Okay'
       })

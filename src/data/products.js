@@ -1,66 +1,66 @@
 const Products = [{
     "user_id":2,
     "id": 1,
-    "name": "Eduard Gerlach GmbH",
-    "location": "Haveluloto",
+    "name": "Product 1",
+    "location": "Location 1",
     "type": "Engineering",
-    "description": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem."
+    "description": "Product 1 description"
 }, {
     "user_id":2,
     "id": 2,
-    "name": "Sun Pharma Global FZE",
-    "location": "Den Haag",
+    "name": "Product 2",
+    "location": "Location 2",
     "type": "Marketing",
-    "description": "Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.\n\nIn hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo."
+    "description": "Product 2 description"
 }, {
     "user_id":2,
     "id": 3,
-    "name": "Nelco Laboratories, Inc.",
-    "location": "El Paso",
+    "name": "Product 3",
+    "location": "Location 3",
     "type": "Product Management",
-    "description": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis."
+    "description": "Product 3 description"
 }, {
     "user_id":2,
     "id": 4,
-    "name": "Nelco Laboratories, Inc.",
-    "location": "Beibao",
+    "name": "Product 4",
+    "location": "Location 4",
     "type": "Legal",
-    "description": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.\n\nDonec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.\n\nDuis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus."
+    "description": "Product 4 description"
 }, {
     "user_id":2,
     "id": 5,
-    "name": "Preferred Pharmaceuticals, Inc.",
-    "location": "Santa Maria",
+    "name": "Product 5",
+    "location": "Location 5",
     "type": "Marketing",
-    "description": "Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus."
+    "description": "Product 5 description"
 }, {
     "user_id":2,
     "id": 6,
-    "name": "Pedinol Pharmacal, Inc.",
-    "location": "Iwanuma",
+    "name": "Product 6",
+    "location": "Location 6",
     "type": "Human Resources",
-    "description": "Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem."
+    "description": "Product 6 description"
 }, {
     "user_id":2,
     "id": 7,
-    "name": "Time-Cap Labs, Inc",
-    "location": "Napnapan",
+    "name": "Product 7",
+    "location": "Location 7",
     "type": "Training",
-    "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est."
+    "description": "Product 7 description"
 }, {
     "user_id":2,
     "id": 8,
     "name": "Topical Pharmaceuticals Inc.",
     "location": "Nogueira do Cravo",
     "type": "Services",
-    "description": "Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.\n\nNullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.\n\nMorbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis."
+    "description": "Product 8 description"
 }, {
     "user_id":2,
     "id": 9,
     "name": "SJ Creations, Inc.",
     "location": "Huaiya",
     "type": "Training",
-    "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh."
+    "description": "Product 9 description"
 }, {
     "user_id":2,
     "id": 10,

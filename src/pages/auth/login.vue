@@ -1,6 +1,6 @@
 <template>
 <v-layout align-center  column>
-  <h2 class="mb-8">Welcome back to Bridge Africa</h2>
+  <h2 class="mb-8">Welcome</h2>
 
   <v-card min-width="400" >
     <v-container>
@@ -30,7 +30,7 @@
         ></v-text-field>
 
 
-        <v-btn color="primary" class="my-4" type="submit">Login</v-btn>
+        <v-btn color="black" class="white" type="submit">Login</v-btn>
 
         <v-layout justify-end class="mt-4">
           <v-btn text class="grey--text text--darken-1" link to="/register">Create an account</v-btn>
@@ -60,7 +60,7 @@ name: "LoginPage",
 
     passwordRules: [
       v => !!v || 'Password is required',
-      v => v.length >= 6 || 'Name must be at least 6 characters',
+      v => v.length >= 6 || 'at least 6 characters',
     ],
 
     email: '',
@@ -81,17 +81,17 @@ name: "LoginPage",
     if (!user) {
       await Swal.update({
         title: 'Invalid credentials!',
-        text: 'Your inputs did not match any of our records, check and try again',
+        text: 'Check your email and password',
         icon: 'error',
-        confirmButtonText: 'Okay'
+        confirmButtonText: 'try again'
       })
     } else {
       this.$store.commit('setUser', user)
       localStorage.setItem("user", JSON.stringify(user))
       await this.$router.replace("/")
       Swal.update({
-        title: 'Bridge Africa',
-        text: 'Welcome, our site uses local storage to store local information on your browser',
+        title: 'Bridge Africa Test',
+        titleText: 'Welcome',
         icon: 'info',
         confirmButtonText: 'Okay'
       })

@@ -8,7 +8,7 @@
     ></v-img>
 
     <v-layout justify-end class="mt-4" v-if="$store.state.isLoggedIn && product.user_id === $store.state.user.id">
-      <v-btn color="info" @click="update">Update</v-btn>
+      <v-btn color="black" class="white--text" @click="update">Update</v-btn>
       <v-btn color="error" class="ml-4" @click="deleteProduct">Delete</v-btn>
     </v-layout>
 
@@ -35,10 +35,10 @@ name: "detail",
     Swal.fire({
       titleText: "Do you really want to delete ?",
       text: "This action is irreversible",
-      confirmButtonText: "Yes delete",
+      confirmButtonText: "delete",
       confirmButtonColor: "red",
       focusCancel: true,
-      cancelButtonText: "No, cancel",
+      cancelButtonText : "cancel",
       showCancelButton: true,
       icon: "info",
       showLoaderOnConfirm: true,
